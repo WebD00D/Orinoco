@@ -5,7 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
-
+ html,body {
+     height:100%;
+ }
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -19,10 +21,14 @@ p {
   color: #26a69a;
 }
 
+.fullheight {
+  height: 100vh;
+}
+
 .parallax-container {
-  min-height: 380px;
+
   line-height: 0;
-  height: auto;
+  height: 100vh;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
@@ -54,4 +60,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.footerboxes{
+  box-sizing:border-box;
 }
