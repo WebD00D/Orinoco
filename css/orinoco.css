@@ -5,13 +5,55 @@
  *
  * Made By MaterializeCSS.com
  */
- html,body {
-     height:100%;
- }
+
+
+
+ html, body { height: 100%; width: 100%; margin: 0; }
+ div { height: 100%; width: 100%; }
+
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
+
+/* label color */
+ .input-field label {
+   color: #b0813d;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #b0813d;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+
+
+.middleborder{
+  border-left:1px solid #eeeeee;
+  border-right:1px solid #eeeeee;
+}
+
+.topborders{
+  border-top:1px solid #eeeeee;
+}
+
+.instaborder{
+  border-right:1px solid #eeeeee;
+}
+.facebookborder{
+  border-right:1px solid #eeeeee;
+}
+.twitterborder{
+  border-right:1px solid #eeeeee;
+}
+.emailborder{
+  border-left:1px solid #eeeeee;
+  border-right:1px solid #eeeeee;
+}
+
 
 p {
   line-height: 2rem;
@@ -23,6 +65,7 @@ p {
 
 .fullheight {
   height: 100vh;
+  
 }
 
 .parallax-container {
@@ -42,6 +85,18 @@ p {
   }
   #index-banner .section {
     top: 10%;
+  }
+  .middleborder{
+    border-left:none;
+    border-right:none;
+    border-top:1px solid #eeeeee;
+    border-bottom:none;
+  }
+  .emailborder{
+    border-left:none;
+    border-right:none;
+    border-top:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
   }
 }
 
