@@ -78,6 +78,40 @@ p {
     width: 100%;
   }
 
+
+.tiles{
+  height:33.4%;
+}
+
+
+
+
+
+.orinocoButton_light {
+    background-color:rgba(156,156,156,0.15);
+    color:black;
+
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
+
+    font-weight: normal;
+    font-style: normal;
+
+    border:3px double rgba(156,156,156,0.15);
+    border-left: none;
+    border-right: none;
+
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+  }
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -121,6 +155,9 @@ p {
   }
   .contactborder{
     border-bottom:none;
+  }
+  .tiles{
+    height:16.7%;
   }
 }
 
