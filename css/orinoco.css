@@ -65,7 +65,7 @@ p {
 
 .fullheight {
   height: 100vh;
-  
+
 }
 
 .parallax-container {
@@ -87,6 +87,27 @@ p {
     top: 10%;
   }
   .middleborder{
+    border-left:1px solid #eeeeee;
+    border-right:none;
+    border-top:none;
+    border-bottom:none;
+  }
+  .emailborder{
+    border-left:1px solid #eeeeee;
+    border-right:none;
+    border-top:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+  }
+  .contactborder{
+    border-bottom:1px solid #eeeeee;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .middleborder{
     border-left:none;
     border-right:none;
     border-top:1px solid #eeeeee;
@@ -98,11 +119,8 @@ p {
     border-top:1px solid #eeeeee;
     border-bottom:1px solid #eeeeee;
   }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+  .contactborder{
+    border-bottom:none;
   }
 }
 
