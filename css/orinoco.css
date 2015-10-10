@@ -90,13 +90,9 @@ p {
 .orinocoButton_light {
     background-color:rgba(156,156,156,0.15);
     color:black;
-
-
-
     padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-top:5px;
+    padding-right:10px;
+  
 
     font-weight: normal;
     font-style: normal;
