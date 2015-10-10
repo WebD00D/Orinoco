@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-    alert("hello Leah, Christian Loves you!");
+    
 
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
