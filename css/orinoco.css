@@ -32,26 +32,26 @@ nav .brand-logo {
 
 
 .middleborder{
-  border-left:1px solid #eeeeee;
-  border-right:1px solid #eeeeee;
+  border-left:1px solid #333333;
+  border-right:1px solid #333333;
 }
 
 .topborders{
-  border-top:1px solid #eeeeee;
+  border-top:1px solid #333333;
 }
 
 .instaborder{
-  border-right:1px solid #eeeeee;
+  border-right:1px solid #333333;
 }
 .facebookborder{
-  border-right:1px solid #eeeeee;
+  border-right:1px solid #333333;
 }
 .twitterborder{
-  border-right:1px solid #eeeeee;
+  border-right:1px solid #333333;
 }
 .emailborder{
-  border-left:1px solid #eeeeee;
-  border-right:1px solid #eeeeee;
+  border-left:1px solid #333333;
+  border-right:1px solid #333333;
 }
 
 
@@ -166,19 +166,19 @@ p {
     top: 10%;
   }
   .middleborder{
-    border-left:1px solid #eeeeee;
+    border-left:1px solid #333333;
     border-right:none;
     border-top:none;
     border-bottom:none;
   }
   .emailborder{
-    border-left:1px solid #eeeeee;
+    border-left:1px solid #333333;
     border-right:none;
-    border-top:1px solid #eeeeee;
-    border-bottom:1px solid #eeeeee;
+    border-top:1px solid #333333;
+    border-bottom:1px solid #333333;
   }
   .contactborder{
-    border-bottom:1px solid #eeeeee;
+    border-bottom:1px solid #333333;
   }
 }
 
@@ -189,14 +189,14 @@ p {
   .middleborder{
     border-left:none;
     border-right:none;
-    border-top:1px solid #eeeeee;
+    border-top:1px solid #333333;
     border-bottom:none;
   }
   .emailborder{
     border-left:none;
     border-right:none;
-    border-top:1px solid #eeeeee;
-    border-bottom:1px solid #eeeeee;
+    border-top:1px solid #333333;
+    border-bottom:1px solid #333333;
   }
   .contactborder{
     border-bottom:none;
