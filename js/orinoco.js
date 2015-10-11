@@ -19,3 +19,11 @@ function animate() {
         scrollTop: $("#allTheContent").offset().top
     }, 700);
   })
+
+  $(".tiles").mouseover(function(){
+    $(".tiles").css({"cursor":"pointer"});
+  })
+
+  $(".tiles").click(function(){
+    window.location.href = $(this).attr('data-page');
+  })
