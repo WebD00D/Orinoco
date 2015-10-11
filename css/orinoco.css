@@ -82,9 +82,17 @@ p {
   background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/5/54/Tobacco_field_cuba1.jpg);
   background-size: cover;
 }
+.StoryTile:hover{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://upload.wikimedia.org/wikipedia/commons/5/54/Tobacco_field_cuba1.jpg);
+  background-size: cover;
+}
 
 .FamilyTile{
   background: linear-gradient(rgba(4, 3, 3, 0.8), rgba(4, 3, 3, 0.8)), url(http://www.smokemag.com/0605/qa1.jpg);
+  background-size: cover;
+}
+.FamilyTile:hover{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://www.smokemag.com/0605/qa1.jpg);
   background-size: cover;
 }
 
@@ -94,14 +102,28 @@ p {
   background-repeat: no-repeat;
   background-position-y:70%;
 }
+.InspirationTile:hover{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://www.onehundredmain.com/images/CharlesMorgan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y:70%;
+}
 
 .PhotosTile{
   background: linear-gradient(rgba(01, 01, 01, 0.8), rgba(01, 01, 01, 0.8)), url(http://st.depositphotos.com/1814366/1503/i/950/depositphotos_15038481-Business-collage.jpg);
   background-size: cover;
 }
+.PhotosTile:hover{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://st.depositphotos.com/1814366/1503/i/950/depositphotos_15038481-Business-collage.jpg);
+  background-size: cover;
+}
 
 .EventsTile{
   background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(  http://s3-media2.fl.yelpcdn.com/bphoto/E2Wj7KgoDASRzroJ0MmHJw/o.jpg);
+  background-size: cover;
+}
+.EventsTile:hover{
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(  http://s3-media2.fl.yelpcdn.com/bphoto/E2Wj7KgoDASRzroJ0MmHJw/o.jpg);
   background-size: cover;
 }
 
