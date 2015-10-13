@@ -6,8 +6,8 @@
 })(jQuery); // end of jQuery name space
 
 function animate() {
-      $('.mainicon').animate({marginTop:'35px'}, 500, function(){
-          $('.mainicon').animate({marginTop:'25px'}, 700, function(){
+      $('.mainicon').animate({marginTop:'15px'}, 500, function(){
+          $('.mainicon').animate({marginTop:'0px'}, 700, function(){
             animate();
           });
       });
