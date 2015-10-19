@@ -27,3 +27,26 @@ function animate() {
   $(".tiles").click(function(){
     window.location.href = $(this).attr('data-page');
   })
+
+  $('#menupoper').on('click', function(e) {
+    e.preventDefault();
+    var isShowing = $(this).attr('data-showingmain');
+    if ( isShowing === 'true'){
+        $(this).attr('data-showingmain','false');
+        $("#maincontent").hide();
+        $("#contentcolumn").css("background-color","black");
+        $("#menuitem").removeClass("fa fa-bars");
+        $("#menuitem").addClass("fa fa-times");
+        $("#menucontent").show();
+    } else {
+        $(this).attr('data-showingmain','true');
+        $("#maincontent").show();
+        $("#contentcolumn").css("background-color","white");
+        $("#menuitem").removeClass("fa fa-times");
+        $("#menuitem").addClass("fa fa-bars");
+        $("#menucontent").hide();
+    }
+
+
+
+});

@@ -16,6 +16,8 @@ nav .brand-logo {
   color: #444;
 }
 
+
+
 /* label color */
  .input-field label {
    color: #b0813d;
@@ -137,14 +139,33 @@ p {
 
 }
 
-
+.basicPageContent{
+  color:black;
+  font-family: 'freight-big-pro';
+  font-weight:400;
+  font-size:large;
+  text-align: left;
+}
 
 .tiles{
   height:33.4%;
 }
 
 .lineUnder_white{
-  width:20px;height:2px;background-color:#b0813d;border:none;margin-top:0px
+  width:20px;height:2px;background-color:#b0813d;border:none;margin-top:0px;
+}
+.lineUnder_white2{
+  width:130px;height:2px;background-color:#b0813d;border:none;margin-top:10px;
+}
+.lineUnder_white3{
+  width:100%;height:1px;background-color:white;border:none;margin-top:20px;
+}
+
+.navlinky:hover{
+  color:#b0813d;
+}
+.navlinky{
+  color:white;
 }
 
 .btnLight{
