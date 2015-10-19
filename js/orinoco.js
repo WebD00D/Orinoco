@@ -29,7 +29,7 @@ function animate() {
   })
 
   $('#menupoper').on('click', function(e) {
-    alert("something");
+    
     e.preventDefault();
     var isShowing = $(this).attr('data-showingmain');
     if ( isShowing === 'true'){
