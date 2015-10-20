@@ -249,6 +249,16 @@ p {
   margin-top:5%;
 }
 
+@media screen and (min-width:1920px) {
+
+  #logimage{
+    margin-top:50%;
+  }
+
+}
+
+
+
 @media only screen and (max-width : 600px) {
 
   #logimage{
