@@ -245,7 +245,15 @@ p {
   }
 }
 
+#logimage{
+  margin-top:5%;
+}
+
 @media only screen and (max-width : 600px) {
+
+  #logimage{
+    margin-top:25%;
+  }
 
   #menupoper{
   margin-left:37%;
