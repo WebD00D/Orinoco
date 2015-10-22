@@ -2,6 +2,15 @@
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
+//    $('.OrinocoSlider').slick({
+  //    autoplay:true,
+  //    autoplaySpeed:3000,
+  //    useCSS: false,
+  //    arrows:false,
+  //    fade:true
+  //  });
+
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -29,7 +38,7 @@ function animate() {
   })
 
   $('#menupoper').on('click', function(e) {
-    
+
     e.preventDefault();
     var isShowing = $(this).attr('data-showingmain');
     if ( isShowing === 'true'){
