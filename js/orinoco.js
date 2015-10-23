@@ -2,17 +2,23 @@
   $(function(){
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-//    $('.OrinocoSlider').slick({
-  //    autoplay:true,
-  //    autoplaySpeed:3000,
-  //    useCSS: false,
-  //    arrows:false,
-  //    fade:true
-  //  });
+  $('.OrinocoSlider').slick({
+     autoplay:true,
+     autoplaySpeed:3000,
+     useCSS: false,
+    arrows:false,
+    fade:true
+   });
+
 
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+
+
+
 
 function animate() {
       $('.mainicon').animate({marginTop:'25px'}, 500, function(){
