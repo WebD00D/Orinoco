@@ -1,14 +1,62 @@
 (function($){
   $(function(){
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+      menuWidth: 300
+    });
     $('.parallax').parallax();
+    $('select').material_select();
+
   $('.OrinocoSlider').slick({
      autoplay:true,
      autoplaySpeed:3000,
-     useCSS: false,
-    arrows:false,
-    fade:true
+     arrows:false,
+     infinite: true,
+     mobileFirst:true,
    });
+
+   $("#inquiryForm").hide();
+   $("#shopDetailsForm").hide();
+
+
+    $('#allCigarSlider').slick({
+  dots: false,
+  infinite: true,
+  arrows:false,
+
+
+
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
 
@@ -18,6 +66,57 @@
 
 
 
+$("#previousSlide").click(function(e){
+  e.preventDefault();
+  $("#allCigarSlider").slick('slickPrev');
+})
+$("#nextSlide").click(function(e){
+  e.preventDefault();
+  $("#allCigarSlider").slick('slickNext');
+})
+$("#previousSlideHome").click(function(e){
+  e.preventDefault();
+  $(".OrinocoSlider").slick('slickPrev');
+})
+$("#nextSlideHome").click(function(e){
+  e.preventDefault();
+  $(".OrinocoSlider").slick('slickNext');
+})
+
+$(".anOrinocoCigar").mouseover(function(){
+  $(this).css("cursor","pointer");
+  $(this).css("background-color","rgba(255,255,255,0.3)");
+})
+$(".anOrinocoCigar").mouseout(function(){
+  $(this).css("cursor","pointer");
+  $(this).css("background-color","rgba(255,255,255,0.0)");
+})
+$(".anOrinocoCigar").click(function(e){
+  e.preventDefault();
+  var goTo = $(this).attr('data-page');
+  window.location.href = goTo;
+
+})
+
+$(".stateImg").mouseover(function(){
+  $(this).css("cursor","pointer");
+})
+$(".stateImg").click(function(){
+  var theState = $(this).attr('data-state');
+  var hasShop = $(this).attr('data-hasShop');
+
+  if ( hasShop === 'No'){
+    $("#inquiryForm").show();
+    $("#shopDetailsForm").hide();
+    $(".basicPageContent2").hide();
+    $("#familyText").text(theState);
+    $("#familySubText").text("Live in " + theState + " and own a cigar shop? Apply to partner with us!");
+  }
+
+
+
+
+})
 
 
 function animate() {

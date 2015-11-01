@@ -16,6 +16,10 @@ nav .brand-logo {
   color: #444;
 }
 
+.slick-slide {
+    outline: none
+}
+
 
 
 /* label color */
@@ -139,7 +143,16 @@ p {
 
 }
 
+
+
 .basicPageContent{
+  color:black;
+  font-family: 'freight-big-pro';
+  font-weight:400;
+  font-size:large;
+  text-align: left;
+}
+.basicPageContent2{
   color:black;
   font-family: 'freight-big-pro';
   font-weight:400;
@@ -159,6 +172,11 @@ p {
 }
 .lineUnder_white3{
   width:100%;height:1px;background-color:white;border:none;margin-top:20px;
+}
+
+
+.navlinks:hover{
+  color:white;
 }
 
 .navlinky:hover{
@@ -184,6 +202,8 @@ p {
     color:black;
     box-shadow: 40px;
 }
+
+
 
 .btnDark{
       background-color:rgba(0,0,0,0.2);color:black;border-radius: 0px;border: 1px solid rgba(0,0,0,0.2);border-left:none;border-right:none;box-shadow: none;
@@ -225,14 +245,65 @@ p {
 
 
   .logoimage{
-    margin-top:5%;
+    margin-top:15%;
     margin-left: 7%;
+    height:16%;
+  }
+
+  .SusanB_logoimage{
+    margin-top: 15%;
+    height:13%;
+    margin-left:7%;
+  }
+  .F4_logoimage{
+    margin-top: 15%;
+    height:17%;
+    margin-left:6%;
+  }
+  .godspeed_logoimage{
+    margin-top: 15%;
+    height:17%;
+    margin-left:6%;
+  }
+  .blackbird_logoimage{
+    margin-top: 15%;
+    height:19%;
+    margin-left:5%;
+  }
+
+  .discovery_logoimage{
+    margin-top: 15%;
     height:20%;
+    margin-left:6%;
   }
 
   .cigarimages{
-    margin-top:25%;
+    margin-top:80%;
     height:100%;
+  }
+
+  .f4_cigarimages{
+    margin-top:95%;
+    height:100%;
+  }
+
+  .susanb_cigarimages{
+    margin-top:95%;
+    height:100%;
+  }
+
+  .discover_cigarimages{
+    margin-top:95%;
+    height:100%;
+  }
+
+  .singleCigarImage{
+    margin-top:0%;
+    height:100%;
+  }
+
+  .cigarTitleImage{
+      height:10%;
   }
 
 
@@ -288,22 +359,39 @@ p {
 
 }
 
+#newstitle{
+  text-align: center;
+}
 
+
+#photoloader{
+  max-height:60%;min-height:60%
+}
 
 @media only screen and (max-width : 600px) {
 
+.cigarTitleImage{
+  margin-top: 15%;
+}
 
+  #photoloader{
+    max-height:50%;min-height:50%
+  }
 
   .logoimage{
-    margin-top:25%;
+    margin-top:65%;
     height:7.5%;
   }
 
   .cigarimages{
-    padding-top: 50px;
+    margin-top: 150px;
     height:70%;
   }
 
+  .singleCigarImage{
+    margin-top:50px;
+    height:70%;
+  }
 
   #menupoper{
   margin-left:37%;
@@ -332,7 +420,7 @@ p {
     border-bottom:none;
   }
   .tiles{
-    height:16.7%;
+    height:25%;
   }
 }
 
