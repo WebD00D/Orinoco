@@ -205,11 +205,11 @@
             <div class="col l12 m12 s12  NewsTile">
                 <small class="tiletext" style="color:black">NEWS</small>
                 <Hr class="lineUnder_white" style="margin-left:0px;margin-bottom:5%">
-                <h1 class="black-text center-align" style="font-family:'freight-big-pro';margin-bottom:0px;"><B>A News Headline</b></h1>
-                  <p class="center-align" style="font-family:'freight-big-pro'">November 1st, 2015 at 11:45 AM</p>
+                <h1 class="black-text center-align" style="font-family:'freight-big-pro';margin-bottom:0px;"><b id="newsPostTitle">A News Headline</b></h1>
+                  <p id="newsPostDate" class="center-align" style="margin-top:0px;font-family:'freight-big-pro';font-style:italic">November 1st, 2015 at 11:45 AM</p>
                   <Hr class="lineUnder_white2 center-align ">
                     <div style="max-height:50%;min-height:50%;padding:10px;overflow:scroll;margin-top:20px">
-                      <p class="basicPageContent" style="text-align:justify">
+                      <p id="newsPostText" class="basicPageContent" style="text-align:justify">
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -354,9 +354,145 @@
 
 
    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
    <script src="js/orinoco.js"></script>
+   <script>
+
+   $(document).ready(function(){
+     //initilizerzzzz
+     Parse.initialize("0LMrk1OPZPyWjo5Y4wShFIOOUbuZUmJU8pXQERoF", "ve3WSaG2pcivyycIbdwKWt25LD4rJdhwnRsjWS6G");
+     loadPost();
+   })
+
+
+   function loadPost(){
+
+     var NewsPost = Parse.Object.extend("newsPost");
+     var query = new Parse.Query(NewsPost);
+     query.get("LquHdGsMGc", {
+     success: function(newsPost) {
+
+      var postTitle = newsPost.get("postTitle");
+      $("#newsPostTitle").empty()
+      $("#newsPostTitle").text(postTitle);
+
+      var postHTML = newsPost.get("postHTML");
+      $("#newsPostText").empty();
+      $("#newsPostText").html(postHTML);
+
+      var createdAt = newsPost.get("updatedAt");
+      formatNewsPostDate(createdAt);
+
+
+     },
+     error: function(object, error) {
+       console.log(error)
+    }
+    });
+
+   }
+
+   function formatNewsPostDate( theDate ){
+     var dateToFormat = new Date(theDate);
+     var theDay = getDay( dateToFormat.getDay());
+     var theMonth = getMonthName(dateToFormat.getMonth());
+     var theDate = getOrdinalSuffix(dateToFormat.getDate());
+
+
+
+      $("#newsPostDate").text( theDay + ', ' + theMonth + ' ' + theDate + ' ' + dateToFormat.getFullYear());
+
+   }
+
+   function getOrdinalSuffix(i) {
+    var j = i % 10,
+        k = i % 100;
+    if (j == 1 && k != 11) {
+        return i + "st";
+    }
+    if (j == 2 && k != 12) {
+        return i + "nd";
+    }
+    if (j == 3 && k != 13) {
+        return i + "rd";
+    }
+    return i + "th";
+}
+
+   function getDay(theday){
+     switch(theday) {
+     case 1:
+         return 'Monday'
+         break;
+     case 2:
+         return 'Tuesday'
+         break;
+     case 3:
+         return 'Wednesday'
+         break;
+     case 4:
+         return 'Thursday'
+         break;
+     case 5:
+         return 'Friday'
+         break;
+     case 6:
+         return 'Saturday'
+         break;
+     case 7:
+         return 'Sunday'
+         break;
+     default:
+         return '???'
+ }
+   }
+
+   function getMonthName(monthIndex){
+    switch(monthIndex) {
+    case 0:
+        return 'January'
+        break;
+    case 1:
+        return 'February'
+        break;
+    case 2:
+        return 'March'
+        break;
+    case 3:
+        return 'April'
+        break;
+    case 4:
+        return 'May'
+        break;
+    case 5:
+        return 'June'
+        break;
+    case 6:
+        return 'July'
+        break;
+    case 7:
+        return 'August'
+        break;
+    case 8:
+        return 'September'
+        break;
+    case 9:
+        return 'October'
+        break;
+    case 10:
+        return 'November'
+        break;
+    case 11:
+        return 'December'
+        break;
+    default:
+        return '???'
+}
+   }
+
+   </script>
 
 
 
