@@ -114,9 +114,8 @@ $(".stateImg").click(function(){
   }
 
 
-
-
 })
+
 
 
 function animate() {
