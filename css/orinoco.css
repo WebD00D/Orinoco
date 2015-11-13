@@ -20,6 +20,10 @@ nav .brand-logo {
     outline: none
 }
 
+.photos{
+  margin-bottom: 80px;
+}
+
 
 
 /* label color */
@@ -309,6 +313,10 @@ p {
 
 @media only screen and (max-width : 992px) {
 
+  .photos{
+    margin-bottom: 10px;
+  }
+
   .logoimage{
     margin-top:5%;
     height:15%;
@@ -369,6 +377,10 @@ p {
 }
 
 @media only screen and (max-width : 600px) {
+
+  .photos{
+    margin-bottom: 100px;
+  }
 
 .cigarTitleImage{
   margin-top: 15%;

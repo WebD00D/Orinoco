@@ -98,23 +98,6 @@ $(".anOrinocoCigar").click(function(e){
 
 })
 
-$(".stateImg").mouseover(function(){
-  $(this).css("cursor","pointer");
-})
-$(".stateImg").click(function(){
-  var theState = $(this).attr('data-state');
-  var hasShop = $(this).attr('data-hasShop');
-
-  if ( hasShop === 'No'){
-    $("#inquiryForm").show();
-    $("#shopDetailsForm").hide();
-    $(".basicPageContent2").hide();
-    $("#familyText").text(theState);
-    $("#familySubText").text("Live in " + theState + " and own a cigar shop? Apply to partner with us!");
-  }
-
-
-})
 
 
 

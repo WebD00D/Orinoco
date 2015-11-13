@@ -64,36 +64,12 @@
             <div id="photoloader" style="padding:10px;overflow:scroll;">
 
 
-                  <div class="col s12">
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img "  data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m12 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
-                      <div class="col l4 m4 s12">
-                          <img class="responsive-img " data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
-                      </div>
 
+            <!--  <div class="col l4 m12 s12">
+                  <img class="responsive-img "  data-caption="UTAH!" src="https://pbs.twimg.com/profile_images/2305843363/leqha8qaqwyjh9p9wx0k.jpeg">
+                  <Br>Nicauragua Factory As Kevin test the new blend out. Its amazing to see how it all works. its so.
+              </div> -->
 
-
-
-                  </div>
 
 
 
@@ -189,11 +165,56 @@
 
 
    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
    <script src="js/orinoco.js"></script>
    <script>
    $(document).ready(function(){
      $("#menucontent").hide();
+     Parse.initialize("0LMrk1OPZPyWjo5Y4wShFIOOUbuZUmJU8pXQERoF", "ve3WSaG2pcivyycIbdwKWt25LD4rJdhwnRsjWS6G");
+     LoadPhotos();
+
+     function LoadPhotos(){
+
+       var Photos = Parse.Object.extend("Photos");
+       var query = new Parse.Query(Photos);
+         query.equalTo("isDeleted", false);
+         $("#photoloader").empty();
+       query.find({
+         success: function(results) {
+           // Do something with the returned Parse.Object values
+           var photoHTML = '';
+           for (var i = 0; i < results.length; i++) {
+             var object = results[i];
+             var thePhoto = object.get("Photo");
+             var caption = object.get("Caption");
+             var thePhotoURL = thePhoto.url();
+             console.log(thePhotoURL);
+
+             //alert(object.id + ' - ' + object.get('EventName'));
+             photoHTML +=   "<div class='col l4 m12 s12 photos' > " +
+                    "<img  class='responsive-img' src="+ thePhotoURL +"> " +
+                    "<Br>" + caption +
+                    "<Br><br> </div> "
+
+
+           }
+
+           $('#photoloader').append(photoHTML);
+           console.log(photoHTML);
+
+
+         },
+         error: function(error) {
+           alert("Error: " + error.code + " " + error.message);
+         }
+       });
+
+
+     }
+
+
    })
    </script>
 
