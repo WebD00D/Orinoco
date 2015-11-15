@@ -322,10 +322,42 @@ p {
     height:15%;
   }
 
+  .discovery_logoimage{
+    margin-top: 65%;
+    height:9%;
+  }
+
+  .blackbird_logoimage{
+    margin-top: 65%;
+    height:9%;
+    margin-left:5%;
+  }
+
+  .godspeed_logoimage{
+    margin-top: 65%;
+    height:9%;
+    margin-left:6%;
+  }
+
+  .F4_logoimage{
+    margin-top: 65%;
+    height:7%;
+    margin-left:6%;
+  }
+
+  .SusanB_logoimage{
+    margin-top: 65%;
+    height:5%;
+    margin-left:7%;
+  }
+
+
   .cigarimages{
     margin-top:35%;
     height:45%;
   }
+
+
 
   #mainheadline{
     margin-top: 25%;
