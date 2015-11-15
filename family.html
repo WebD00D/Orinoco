@@ -376,27 +376,27 @@
           <div id="inquiryForm">
 
                   <div style="height:auto;padding-left:0px" class="input-field col l4 s12">
-                     <input id="shop_name" type="text" class="validate">
+                     <input id="shop_name" type="text" style="color:black">
                      <label for="shop_name">Shop Name</label>
                    </div>
                    <div style="height:auto;padding-left:0px"  class="input-field col l4 s12">
-                     <input id="shop_email"  type="text" class="validate">
+                     <input id="shop_email"  type="text" style="color:black">
                      <label for="shop_email">Email</label>
                    </div>
                    <div style="height:auto;padding-left:0px"  class="input-field col l4 s12">
-                     <input id="shop_phone"  type="text" class="validate">
+                     <input id="shop_phone"  type="text" style="color:black">
                      <label for="shop_phone">Phone</label>
                    </div>
                    <div style="height:auto;padding-left:0px"  class="input-field col l12 s12">
-                     <input id="shop_address"  type="text" class="validate">
+                     <input id="shop_address"  type="text" style="color:black">
                      <label for="shop_address">Shop Address</label>
                    </div>
                    <div style="height:auto;padding-left:0px;margin-bottom:30px"  class="input-field col l12 s12">
-                       <input id="shop_details"  type="text" class="validate">
+                      <input id="shop_details"  type="text" style="color:black">
                      <label for="shop_details">How did you learn about Orinoco?</label>
                    </div>
 
-                  <a href="#" class="btnLight" style="padding-top:10px;padding-bottom:10px;padding-left:40px;padding-right:40px;">Submit</a>
+                  <a href="#" id="btnShopInquiry" class="btnLight" style="padding-top:10px;padding-bottom:10px;padding-left:40px;padding-right:40px;">Submit</a>
           </div>
 
           <p id="shopDetailsForm">
@@ -492,6 +492,19 @@
     Parse.initialize("0LMrk1OPZPyWjo5Y4wShFIOOUbuZUmJU8pXQERoF", "ve3WSaG2pcivyycIbdwKWt25LD4rJdhwnRsjWS6G");
      $("#menucontent").hide();
 
+     $("#btnShopInquiry").click(function(){
+       var shopName = $("#shop_name").val();
+       var shopPhone = $("#shop_phone").val();
+       var shopEmail = $("#shop_email").val();
+       var shopAddress = $("#shop_address").val();
+       var shopDetails = $("#shop_details").val();
+
+       alert("need to write mail code to send off form").
+
+
+     })
+
+
      $(".stateImg").mouseover(function(){
        $(this).css("cursor","pointer");
      })
@@ -507,6 +520,7 @@
             if (results.length > 0){
 
               $("#shopDetailsForm").empty();
+              $("#inquiryForm").hide();
               $(".basicPageContent2").hide();
               $("#shopDetailsForm").show();
               var shopHTML = '';
@@ -519,11 +533,18 @@
                 shopHTML += "<h5 style='margin-bottom:0px;font-family:freight-big-pro;font-weight:400'>"+ shopName +"</h5><h6 style='font-family:freight-big-pro;font-weight:400' >"+ shopPhone +"</h6><h6 style='font-family:freight-big-pro;font-weight:400' >"+ streetAddress +"</h6><br>"
               }
 
-                alert(shopHTML);
                 $("#familyText").text(theState);
                 $("#familySubText").text("Find our cigars in the fine locations below:");
                 $(shopHTML).appendTo("#shopDetailsForm")
 
+
+            } else {
+
+              $("#inquiryForm").show();
+              $("#shopDetailsForm").hide();
+              $(".basicPageContent2").hide();
+              $("#familyText").text(theState);
+              $("#familySubText").text("Live in " + theState + " and own a cigar shop? Apply to partner with us!");
 
             }
 
@@ -532,15 +553,6 @@
             console.log("Error: " + error.code + " " + error.message);
           }
         });
-
-
-    //   if ( hasShop === 'No'){
-    //     $("#inquiryForm").show();
-    //     $("#shopDetailsForm").hide();
-    //     $(".basicPageContent2").hide();
-    ////     $("#familyText").text(theState);
-    //     $("#familySubText").text("Live in " + theState + " and own a cigar shop? Apply to partner with us!");
-    //   }
 
      })
    }) //end doc ready function
