@@ -90,6 +90,23 @@
        var month = $("#month").val();
        var day = $("#day").val();
        var year = $("#year").val();
+
+
+       if (!$.trim(month)){
+         alert("Please fill in all date fields.");
+         return;
+       }
+       if (!$.trim(day)){
+         alert("Please fill in all date fields.");
+         return;
+       }
+       if (!$.trim(year)){
+         alert("Please fill in all date fields.");
+         return;
+       }
+
+
+
        var age = 18;
 
        var mydate = new Date();
