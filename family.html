@@ -37,7 +37,7 @@
    </div>
  </nav>
  <ul class="side-nav" id="mobile-demo" style="background-color:black;font-family:'freight-big-pro';font-size:x-large">
-   <li><a class='navlinks' href="Index.html" style="color:#b0813d;font-size:30px">Home</a></li>
+   <li><a class='navlinks' href="home.html" style="color:#b0813d;font-size:30px">Home</a></li>
      <hr style="background-color:#b0813d;height:1px;border:none;">
    <li><a class='navlinks' href="Cigars.html" style="color:#b0813d;font-size:30px">Cigars</a></li>
      <hr style="background-color:#b0813d;height:1px;border:none;">
@@ -64,11 +64,11 @@
 
 
             <div style="max-height:90%;min-height:90%;padding:10px;overflow-y:scroll">
-              <p class="basicPageContent" style="padding-left:30%">
+              <p class="basicStateContent" >
 
                 <img class="stateImg" data-state="Alabama"   src='https://lh3.googleusercontent.com/6UvzxuW6t1lNdcSv4D3mDjSmTzESuBqsIZpIOdx8lyQQQE0dgofJQW1RaTYAY-Xv_MxhGfQ271nKbzBp5hwsStmiH9ABmwV8H3U-PRn5pseU1DHgHlYo3dn_5nmejwAV86dnf-6pkZMDFDy170lhlddmugcq6qxWodn4TeSijEi0kc62GSVhuHzq9kxlCYX18ZCqG_Dawat1pMZIAD_1-1JqOHurc2QXXLd2mWUShs7Vim6L12CNSXicUNGH3W_lMCn4Gj05N4mJgcgxAJ1uAjtXxmNPXHjspdxckKxNN1nMRYBmRiSpXj99XZo9A4AunETXO54h2FVbH-svw7oOes3ik-Vp7inL8G56cbTXO3ipTgvdViGzWGpHC7ZB3qz6mTAoCh5nM9CUK0phHy7xG8Zg--N1xTINid_rwDmvArn2zDHmbE5wRHuWx67rAmNiqFcWC7q0PNe89eKVFWsjaJDIWqUS_UjmiUx8kbH8CnoFtqiTcIh-5CyA7TfLGl6KiH4N6Vabr4gqCAOJT2pUxrJ8pb7tZrNwflwKQy7dPgI=s128-no'>
                 <Br>
-                <label style="padding-left:10%;font-size:larger">Alabama</label>
+                <label class="statelabel" style="padding-left:10%;font-size:larger">Alabama</label>
                 <Br>
                 <Br>
 
@@ -343,7 +343,7 @@
 
 
       <div class="col l8 m8 s8 fullheight left-align" style="padding-left:15px;background-color:white">
-        <h1 class="black-text" style="font-family:'freight-big-pro';margin-bottom:0px;"><B id="familyText">Our Family</b></h1>
+        <h1 id="familyBigText" class="black-text" style="font-family:'freight-big-pro';margin-bottom:0px;"><B id="familyText">Our Family</b></h1>
               <Hr class="lineUnder_white2 " style="margin-left:0px;width:30%">
         <span id="familySubText" style="font-family:'freight-big-pro';font-weight:400;font-style:italic;font-size:x-large;">The Orinoc family of cigar lovers.</span>
         <Br>
@@ -502,11 +502,10 @@
        var shopEmail = $("#shop_email").val();
        var shopAddress = $("#shop_address").val();
        var shopDetails = $("#shop_details").val();
+       alert("need to write mail code to send off form")
+     });
 
-       alert("need to write mail code to send off form").
 
-
-     })
 
 
      $(".stateImg").mouseover(function(){
@@ -559,6 +558,7 @@
         });
 
      })
+
    }) //end doc ready function
    </script>
 

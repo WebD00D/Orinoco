@@ -449,7 +449,29 @@ p {
   max-height:60%;min-height:60%
 }
 
+
+
 @media only screen and (max-width : 600px) {
+
+
+
+  .basicStateContent{
+    padding-left: 5%;
+  }
+
+  .stateImg{
+    height:50px;
+  }
+
+  #cigarBigTitle{
+    padding-top:50px;
+    font-size: 40px;
+  }
+
+  #familyBigText{
+    font-size: 40px;
+    padding-top: 20px;
+  }
 
   .logoimage{
     margin-top:65%;
