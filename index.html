@@ -45,7 +45,7 @@
                 <label for="year">Year</label>
               </div>
               <div class="input-field col s12" style="height:10%">
-                    <a href="home.html" class="btnRed" style="padding-left:25%;padding-right:25%;padding-top:10px;padding-bottom:10px;font-family:'freight-big-pro'">Submit</a>
+                    <a id="btnCheckAge" href="#" class="btnRed" style="padding-left:25%;padding-right:25%;padding-top:10px;padding-bottom:10px;font-family:'freight-big-pro'">Submit</a>
               </div>
 
 
@@ -85,6 +85,31 @@
    <script>
    $(document).ready(function(){
      $("#menucontent").hide();
+
+     $("#btnCheckAge").click(function(){
+       var month = $("#month").val();
+       var day = $("#day").val();
+       var year = $("#year").val();
+       var age = 18;
+
+       var mydate = new Date();
+       mydate.setFullYear(year, month-1, day);
+
+       var currdate = new Date();
+       var setDate = new Date();
+       setDate.setFullYear(mydate.getFullYear() + age,month-1, day);
+
+       if ((currdate - setDate) > 0){
+         // you are above 18
+         window.location.href = "home.html";
+       }else{
+         alert("You must be 18 years or older to enter the Orinoco website.");
+       }
+
+
+     })
+
+
    })
    </script>
 
