@@ -14,8 +14,9 @@
  </head>
  <body>
 
-
-   <div id="allTheContent" class="fullheight" style="overflow:hidden;background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.6)),url(http://bacart.org/wp-content/uploads/2013/02/Harry-Ableman-August-Mist-Low-Res.jpg);'"  >
+   <!--data-vide-bg="path/to/video" data-vide-options="loop: false, muted: false, position: 0% 0%" -->
+   <!--<div id="allTheContent" class="fullheight" style="overflow:hidden;background:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.6)),url(http://bacart.org/wp-content/uploads/2013/02/Harry-Ableman-August-Mist-Low-Res.jpg);'"  > -->
+  <div id="allTheContent" class="fullheight" data-vide-bg="video/orinoco.webm" data-vide-options="loop:true,muted:true" >
      <div class="row">
        <div id="contentcolumn" class="col l12 m12 s12 fullheight" style="padding:0px;">
          <div class="row center-align" style="padding:2%">
@@ -77,13 +78,10 @@
 
 
 
-
-
-
-
-
    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+   <script src="js/jquery.vide.js"></script>
    <script src="js/orinoco.js"></script>
    <script>
    $(document).ready(function(){
