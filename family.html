@@ -459,11 +459,11 @@
 
      </div>
 
-   <div class="footer-copyright center-align" style="background-color:black;font-size:12px;font-family:'freight-big-pro'">
-
-     Handcrafted with <i style="font-size:12px" class="material-icons red-text">favorite</i> by <a class="white-text text-lighten-3" href="http://www.laboremedge.com">Laborem Edge</a>
-
-   </div>
+     <div class="center-align white-text" style="background-color:black;font-size:12px;font-family:'freight-big-pro';padding:10px">
+       Handcrafted with <i style="font-size:12px" class="material-icons red-text">favorite</i> by <a class="white-text text-lighten-3" href="http://www.laboremedge.com">Laborem Edge</a>
+       <Br>
+       <span class="white-text">Orinoco Cigars &copy <span id="theDate"></span> All rights reserved.</span>
+     </div>
 
  </footer>
 
@@ -478,6 +478,10 @@
    $(document).ready(function(){
     Parse.initialize("0LMrk1OPZPyWjo5Y4wShFIOOUbuZUmJU8pXQERoF", "ve3WSaG2pcivyycIbdwKWt25LD4rJdhwnRsjWS6G");
      $("#menucontent").hide();
+
+          //setDate.
+          var thedate = new Date();
+          $("#theDate").text(thedate.getFullYear());
 
      $("#btnShopInquiry").click(function(){
        var shopName = $("#shop_name").val();
