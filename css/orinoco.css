@@ -94,20 +94,22 @@ p {
 }
 
 .StoryTile{
-  background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/5/54/Tobacco_field_cuba1.jpg);
+  background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-5bd8c69d-b26a-4290-97f7-f08ac85824d7-Wade.jpg);
   background-size: cover;
+  background-position-x:20%;
 }
 .StoryTile:hover{
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://upload.wikimedia.org/wikipedia/commons/5/54/Tobacco_field_cuba1.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-5bd8c69d-b26a-4290-97f7-f08ac85824d7-Wade.jpg);
   background-size: cover;
+  background-position-x:20%;
 }
 
 .FamilyTile{
-  background: linear-gradient(rgba(4, 3, 3, 0.8), rgba(4, 3, 3, 0.8)), url(http://www.smokemag.com/0605/qa1.jpg);
+  background: linear-gradient(rgba(4, 3, 3, 0.8), rgba(4, 3, 3, 0.8)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-cdca6db0-205f-4828-95ac-b6254f511611-400.jpg);
   background-size: cover;
 }
 .FamilyTile:hover{
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://www.smokemag.com/0605/qa1.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-cdca6db0-205f-4828-95ac-b6254f511611-400.jpg);
   background-size: cover;
 }
 
@@ -125,20 +127,20 @@ p {
 }
 
 .PhotosTile{
-  background: linear-gradient(rgba(4, 3, 3, 0.8), rgba(4, 3, 3, 0.8)), url(http://st.depositphotos.com/1814366/1503/i/950/depositphotos_15038481-Business-collage.jpg);
+  background: linear-gradient(rgba(4, 3, 3, 0.8), rgba(4, 3, 3, 0.8)), url(http://photography-cameras.org/images/stories/photography-beginner.jpg);
   background-size: cover;
 }
 .PhotosTile:hover{
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://st.depositphotos.com/1814366/1503/i/950/depositphotos_15038481-Business-collage.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://photography-cameras.org/images/stories/photography-beginner.jpg);
   background-size: cover;
 }
 
 .EventsTile{
-  background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(  http://s3-media2.fl.yelpcdn.com/bphoto/E2Wj7KgoDASRzroJ0MmHJw/o.jpg);
+  background: linear-gradient(rgba(96, 77, 56, 0.9), rgba(96, 77, 56, 0.9)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9bd2e048-2863-4b7a-bfa4-f2c5dfd4fad1-events.jpg);
   background-size: cover;
 }
 .EventsTile:hover{
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(  http://s3-media2.fl.yelpcdn.com/bphoto/E2Wj7KgoDASRzroJ0MmHJw/o.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(http://files.parsetfss.com/69cc1ebe-f693-4f84-ae97-93438bf7ac31/tfss-9bd2e048-2863-4b7a-bfa4-f2c5dfd4fad1-events.jpg);
   background-size: cover;
 }
 
